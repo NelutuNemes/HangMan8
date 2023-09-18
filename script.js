@@ -540,6 +540,7 @@ const themeSelect = document.getElementById("theme-select");
 const submitButton2 = document.getElementById("submit-button2");
 const body_theme = document.getElementById("body");
 const keyboard_theme = document.getElementById("keyboard");
+const keyboard_name1 = document.getElementById("keyboard-name1")
 
 let currentTheme = "Clean-white"; // Tema curentă implicită
 
@@ -553,7 +554,7 @@ submitButton2.addEventListener("click", (event) => {
         // Elimin clasa CSS a temei anterioare (dacă există)
         body_theme.classList.remove("gradient-background", "gradient-background2", "gradient-background3");
         keyboard_theme.classList.remove("gradient-background", "gradient-background2", "gradient-background3");
-
+        keyboard_name1.style.color = "";
         // Actualizează tema curentă
         currentTheme = selectedTheme;
 
@@ -562,6 +563,8 @@ submitButton2.addEventListener("click", (event) => {
             case "Clean-white":
                 document.documentElement.style.removeProperty("--main-background-color");
                 body_theme.style.backgroundColor = "#ffffff";
+                keyboard_name1.style.color = ("#000000");
+
                 break;
             case "Barbie-Pink":
                 document.documentElement.style.setProperty("--main-background-color", "#fffff");
@@ -572,11 +575,14 @@ submitButton2.addEventListener("click", (event) => {
                 document.documentElement.style.setProperty("--main-background-color", "#fffff");
                 body_theme.classList.add("gradient-background2");
                 keyboard_theme.classList.add("gradient-background2");
+                keyboard_name1.style.color = ("#ffffff");
                 break;
             case "Green-beetle":
                 document.documentElement.style.setProperty("--main-background-color", "#ffffff");
                 body_theme.classList.add("gradient-background3");
                 keyboard_theme.classList.add("gradient-background3");
+                keyboard_name1.style.color = ("#000000");
+
                 break;
             default:
                 // Dacă nu se potrivește cu nicio temă cunoscută, nu face nimic.
