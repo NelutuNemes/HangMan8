@@ -134,29 +134,30 @@ main {
 
 }
 
-.button {
+/* .button {
     width: 20vw;
     display: flex;
     flex-direction: column;
-}
+} */
 
 #reset-button {
-    width: fit-content;
+    width: 14vw;
     border-radius: 10px;
     color: rgb(101, 100, 100);
     background-color: rgb(239, 238, 238);
     box-shadow: 0px 2px 4px rgba(11, 11, 11, 0.935);
-    border: 1px solid white;
-    margin-left: 5%;
+    border: 1px solid rgb(210, 209, 209);
+    margin-right: 1vw;
     font-size: 2vw;
+    margin-bottom: 1.5vw;
 
 }
 
 #reset-button:hover {
     cursor: pointer;
     border: 1px solid red;
-    color: red;
-    background-color: rgb(210, 209, 209);
+    color: white;
+    background-color: red;
 }
 
 
@@ -239,7 +240,7 @@ main {
 
 .show-hint {
     font-size: 10px;
-    padding: 5px;
+    padding: 2px;
     opacity: 1;
     animation: fade 2s infinite alternate;
 }
@@ -281,6 +282,13 @@ main {
 
 }
 
+.top-keyboard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 #keyboard-first-row,
 #keyboard-second-row,
 #keyboard-third-row {
@@ -316,12 +324,11 @@ main {
 .keyboard-name {
     color: #adabab;
     font-family: cursive;
-    font-size: 10px;
+    font-size: 1.5vw;
     width: fit-content;
     padding: 3px;
     border-radius: 10px;
-
-    margin-bottom: 4px;
+    /* margin-bottom: 4px; */
 }
 
 

@@ -71,15 +71,11 @@
             <h1 id="title">Welcome to the 'HangMan' game !</h1>
 
             <div class="top-item">
-                <div class="button">
-                    <button id="reset-button">Game reset</button>
-                </div>
                 <div class="image">
                     <canvas id="hangman-canvas"></canvas>
                 </div>
                 <div class="lives">
                     Lives :
-                    <br>
                     <div id="progress-message"></div>
                     <div class="progress" id="progress">
                         <div class="progress-bar" id="progress-bar"></div>
@@ -113,15 +109,21 @@
                 <div id="correct-user-choices"></div>
                 <div id="correct-message">Correct answers</div>
             </section>
-            <br>
             <div class="keyboard-container">
                 <section id="keyboard">
-                    <div class="keyboard-name">playerMiniKeyboard</div>
+                    <div class="top-keyboard">
+                        <div class="keyboard-name">playerMiniKeyboard</div>
+                        <div class="button">
+                            <button id="reset-button">Game reset</button>
+                        </div>
+
+                    </div>
+
                     <div id="keyboard-first-row"></div>
                     <div id="keyboard-second-row"></div>
                     <div id="keyboard-third-row"></div>
                 </section><br>
-            </div>
+            </div>buttons
             <div>
                 <h2 id="bottom-text">Guess the hidden word!</h2>
             </div>
