@@ -559,9 +559,9 @@ canvas {
 
 @media screen and (max-width: 530px) {
     #keyboard span {
-        width: 20px;
+        width: 27px;
         /* max-width: 10px; */
-        height: 20px;
+        height: 27px;
         /* max-height: 10px; */
     }
 
@@ -685,7 +685,7 @@ canvas {
         font-size: 2vw;
         display: flex;
         align-items: center;
-        height: 3vw;
+        height: 6vw;
         border-radius: 5px;
         width: 15vw;
 
@@ -697,7 +697,7 @@ canvas {
         font-size: 2vw;
         display: flex;
         align-items: center;
-        height: 3vw;
+        height: 6vw;
         border-radius: 5px;
         width: 17vw;
         border: 1px solid black;
@@ -709,7 +709,7 @@ canvas {
     #submit-button,
     #submit-button2 {
         width: 9vw;
-        height: 3vw;
+        height: 6vw;
         padding-left: 2px;
         padding-right: 2px;
         margin-left: 1px;
