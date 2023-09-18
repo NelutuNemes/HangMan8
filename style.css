@@ -529,6 +529,9 @@ select {
     font-size: 1vw;
     align-items: center;
     height: 3vw;
+    padding: 2px;
+    border-radius: 5px;
+    /* border: 1px solid black; */
 
 }
 
