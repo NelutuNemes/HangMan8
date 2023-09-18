@@ -424,6 +424,11 @@ canvas {
 
 }
 
+select {
+    height: 3vw;
+    border-radius: 5px;
+}
+
 #difficulty-form {
     width: 100%;
     height: 5vw;
