@@ -223,7 +223,7 @@ main {
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 5px;
-    min-width: 20vw;
+    /* min-width: 20vw; */
     min-height: 3vw;
     text-align: center;
 }
@@ -508,10 +508,9 @@ select {
     margin-left: 5px;
     margin-right: 5px;
     box-shadow: 0px 2px 4px rgba(11, 11, 11, 0.935);
-
     border-radius: 5px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     height: 5vw;
     max-height: 5vw;
@@ -571,6 +570,11 @@ select {
     color: red;
     border: 1px solid red;
 }
+
+
+
+
+
 
 @media screen and (max-width: 530px) {
     #keyboard span {
@@ -744,17 +748,59 @@ select {
 }
 
 
-.show-hand-info-navbar {
-    opacity: 1;
-    animation: fade 2s infinite alternate;
-}
+@media screen and (min-width: 850px) {
+    #keyboard {
+        display: flex;
+        flex-direction: column;
+        width: 67%;
+        max-width: 70%;
+        height: auto;
+        padding: 10px;
+        background-color: var(--main-background-color);
+        border-radius: 40px;
+        box-shadow: 0px 2px 4px rgba(11, 11, 11, 0.935);
+
+    }
+
+    #reset-button {
+        width: 12vw;
+        border-radius: 10px;
+        color: rgb(101, 100, 100);
+        background-color: rgb(239, 238, 238);
+        box-shadow: 0px 2px 4px rgba(11, 11, 11, 0.935);
+        border: 1px solid rgb(210, 209, 209);
+        margin-right: 1vw;
+        font-size: 1.1vw;
+        margin-bottom: 0.1vw;
+
+    }
+
+    .keyboard-name {
+        color: black;
+        font-family: cursive;
+        font-size: 1.2vw;
+        width: fit-content;
+        padding: 3px;
+        border-radius: 10px;
+        /* margin-bottom: 4px; */
+    }
 
 
-#hand-symbol {
-    width: 1vw;
-    height: 1vw;
-}
 
-#drag-message {
-    font-size: 1vw;
+
+
+    .show-hand-info-navbar {
+        opacity: 1;
+        animation: fade 2s infinite alternate;
+    }
+
+
+    #hand-symbol {
+        width: 1vw;
+        height: 1vw;
+    }
+
+    #drag-message {
+        font-size: 1vw;
+    }
 }

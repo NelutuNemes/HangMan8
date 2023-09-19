@@ -373,7 +373,7 @@ navbar.style.display = "none";
 // Adaug un eveniment pentru detectarea mișcării mouse-ului
 document.addEventListener("mousemove", function (event) {
     // Verifică dacă mouse-ul este aproape de marginea de sus a paginii
-    if (event.clientY <= 120) {
+    if (event.clientY <= 160) {
         navbar.style.display = "block"; // Afișează bara de navigare
     } else {
         navbar.style.display = "none"; // Ascunde bara de navigare
