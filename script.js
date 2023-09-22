@@ -175,7 +175,7 @@ function check_Letter_InWord(letter) {
     if (correct_choice_counter === random_generated_word.length) {
         console.log("Ai castigat !");
         game_result.style.color = "light-green";
-        game_result.textContent = "Congratulations ! You are a winner ! The game is over !";
+        game_result.textContent = "Congratulations ! You are a winner ! The round is over !";
         player_wins++;
         updateWinsOnPage();
         navbar.style.display = "block";
@@ -188,7 +188,7 @@ function check_Letter_InWord(letter) {
 
     } else if (wrong_choice_counter === 6) {
         console.log("Ai pierdut! Jocul s-a încheiat.");
-        game_result.textContent = "I'm sorry, you lost ! The game is over !";
+        game_result.textContent = "I'm sorry, you lost ! The round is over !";
         game_result.style.color = "red";
         first_section.style.backgroundColor = "#c1bebe";
         setTimeout(function () {
